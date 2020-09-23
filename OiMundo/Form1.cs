@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -19,7 +20,12 @@ namespace OiMundo
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Você quer continuar?");
+            int idadeLucia = 33;
+            int idadeGiovana = 17;
+            int idadeTiago = 33;
+            int media = (idadeGiovana + idadeLucia + idadeTiago )/ 3;
+            string mensagem = "A média das idades é:" + media;
+            MessageBox.Show(mensagem);
         }
     }
 }
